@@ -19,6 +19,6 @@ template:
       - containerPort: 8080
       env:
       - name: AWS_SECRET_ACCESS_KEY
-        value: zR0bIgG6unaVsdU2OAL7RSGWnXTo4Wo4RztPwXdL
+        value: ""
       - name: AWS_ACCESS_KEY_ID
-        value: AKIAJ6FPNHBJZD6BDVZA 
+        value: ""
