@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+ name: simplepy-deployment
+spec:
+ selector:
+  matchLabels:
+    LOGENABLED=TRUE
+ replicas: 1
+template: 
+  metadata:
+   labels:
+    LOGENABLED=TRUE
+  spec:
+    containers:
+    - name: simplepy
+      image: tpaz1/simplepy:latest
+      ports:
+      - containerPort: 8080
+      env:
+      - name: AWS_SECRET_ACCESS_KEY
+        value: zR0bIgG6unaVsdU2OAL7RSGWnXTo4Wo4RztPwXdL
+      - name: AWS_ACCESS_KEY_ID
+        value: AKIAJ6FPNHBJZD6BDVZA 
