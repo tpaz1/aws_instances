@@ -1,5 +1,5 @@
 #                                             **aws_instances**
-this project will help you manage, monitor and track your up and running aws `ec2 instances` with `ELK stack`.
+## this project will help you manage, monitor and track your up and running aws `ec2 instances` with `ELK stack`.
 
 Our [`python`](./app_package/ec2_instance.py) script connects to our `aws` account using `boto3` and outputs the number of our up and running `ec2 instances` and their IP's.
 
