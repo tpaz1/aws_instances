@@ -11,3 +11,14 @@ Our [`python`](./app_package/ec2_instance.py) script connects to our `aws` accou
 Our [`Dockerfile`](./app_package/Dockerfile) builds our image locally using `Base image` alpine-awscli.
 
 After our `docker` image is ready and we pushed it to our repository (`Docker hub`) we start with the `kubernetes` part. 
+
+## ECK Cluster
+
+Our ECK Cluster setup built as followed:
+
+- 2X Pods of `MASTER` + `DATA` (master + data will run together) 
+- 2X Pods  of `Ingest Node`
+- 2X Pods of Cordinator nodes
+
+Our setup require the Master and Data node to have persistent storage,
+Along with the minimal CPU + RAM request configured for the pods.
