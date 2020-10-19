@@ -12,7 +12,7 @@ Our [`Dockerfile`](./app_package/Dockerfile) builds our image locally using `Bas
 
 After our `docker` image is ready and we pushed it to our repository (`Docker hub`) we start with the `kubernetes` part. 
 
-In the `k8s` part we deploy our appliction which runs on port 8080 by pulling the Docker image we created from [Docker hub](https://hub.docker.com/?ref=login) 
+In the `k8s` part we deploy our appliction which runs on port 8080 by pulling the Docker image we created from [Docker hub](https://hub.docker.com/?ref=login) and passing our [`AWS credentials`](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html) as an `Environment variables` to our appliction.
 
 ## ECK Cluster
 
