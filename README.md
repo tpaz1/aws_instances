@@ -23,5 +23,7 @@ Our ECK Cluster setup built as followed:
 Our setup require the Master and Data node to have persistent storage,
 Along with the minimal CPU + RAM request configured for the pods.
 
-The coordinator role in this cluster is to forward the logs from our python appliction to the data node which hold the data.
+The coordinator role in this cluster is to forward the logs from our python appliction to the data node which holds the data.
+Then, using `Kibana` we will create dashboards of our indexed data to view and visualize our up and running `ec2 instances` in a very nice and interactive way. 
+
 
